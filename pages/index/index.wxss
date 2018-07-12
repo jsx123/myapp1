@@ -1,0 +1,31 @@
+/**index.wxss**/
+.swiper-container{
+  width: 100%;
+}
+.slide-image{
+  width: 100%;
+  height: 200px;
+}
+.process{
+  padding: 18rpx;
+  border-bottom:1px solid #ccc;
+  display: flex;
+}
+.imgs{
+  width: 250rpx;
+  height: 350rpx;
+}
+.pics{
+  flex:1
+}
+.txts{
+  flex:2;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+}
+.fonts{
+  font-size: 14px;
+  display: inline-block;
+  margin-top: -20px;
+}
+

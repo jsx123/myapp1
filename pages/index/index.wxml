@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class="swiper-container" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+ </swiper>
+  <view class="process" wx:for="{{movies}}" wx:key="index">
+    <view class="pics">
+    <image class="imgs" src='{{item.url}}'></image>
+    </view>
+    <view class="txts">
+      <text class="fonts">
+      电影名：<text style='font-weight:bold;color:red;'>{{item.name}}</text>
+      </text>
+      <text class="fonts">
+      导演：<text style='color:white;'>{{item.director}}</text>
+      </text>    
+      <text class="fonts">
+
+      简述：<text style='color:white;'>{{item.sketch}}</text>
+      </text>        
+    </view>
+  </view> 
+  
+</view>
